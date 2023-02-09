@@ -1,0 +1,292 @@
+/* google font*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* reset code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #e6ecf3;
+  color: #000d1c;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* reuseable css */
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 8px 16px;
+  background: #e6ecf3;
+  display: inline-block;
+  color: #00428b;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #668eb9;
+  color: #e6ecf3;
+}
+
+/* ==========css for nav bar======= */
+.header {
+  background-color: #00428b;
+  padding: 20px 0px;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+.navBarBrand {
+  font-size: 40px;
+  color: #e6ecf3;
+  cursor: pointer;
+}
+.navBar ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navBar a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #e6ecf3;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.navBar a:hover {
+  background-color: #001a38;
+  border-radius: 8px;
+}
+
+/* ==========css for banner section======= */
+.banner {
+  background-color: #00428b;
+  padding: 100px 0px;
+}
+
+.banner .wrapper {
+  display: flex;
+  align-items: center;
+}
+.bannerTextBox {
+  flex: 1;
+}
+.bannerTextBox h1 {
+  font-size: 50px;
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+  color: #e6ecf3;
+  margin-bottom: 16px;
+}
+.bannerTextBox p {
+  font-size: 14px;
+  color: #e6ecf3;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.bannerImgBox {
+  flex: 1;
+  text-align: end;
+}
+.bannerImgBox img {
+  width: 80%;
+  height: auto;
+}
+
+/* ==========css for failure section======= */
+.failure {
+  padding: 100px 0px;
+}
+.failure .wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
+}
+.failureImgBox {
+  flex: 1;
+}
+.failure img {
+  max-width: 300px;
+}
+.failureTextBox {
+  flex: 1;
+}
+.failureTextBox h3 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+  color: #000d1c;
+}
+.failureTextBox p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.failureTextBox li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.failureTextBox span {
+  color: #00428b;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+/* ==========css for plans section======= */
+.plan {
+  padding: 50px 0px;
+}
+.plan h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+  color: #000d1c;
+  margin-bottom: 30px;
+}
+
+.plan .wrapper {
+  display: flex;
+}
+.plan .planItem {
+  flex: 1;
+  text-align: center;
+}
+.plan .planItem img {
+  width: 90px;
+}
+.plan .planItem h4 {
+  font-size: 20px;
+}
+.plan p {
+  font-size: 14px;
+}
+
+/* ==========css for call to action section======= */
+.cta {
+  margin-bottom: 50px;
+}
+.cta .wrapper {
+  background-image: linear-gradient(to right, rgba(0, 66, 139, 0.9), rgba(153, 179, 209, 0.2)), url("images/watch.png");
+  background-size: cover;
+  padding: 100px 50px;
+  border-radius: 10px;
+}
+.cta h3 {
+  width: 25%;
+  color: #e6ecf3;
+  margin-bottom: 20px;
+}
+
+/* ==========css for footer action section======= */
+.footer {
+  background: #000d1c;
+  padding: 100px 0px;
+  color: #e6ecf3;
+}
+.footer .wrapper {
+  display: flex;
+  gap: 250px;
+  align-items: center;
+}
+.contactInfo {
+  flex: 1;
+}
+.contactInfo h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.contactInfo p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.socialLinksWrapper {
+  width: 150px;
+}
+.socialLinksInner {
+  display: flex;
+}
+.socialLinksInner .iconBox {
+  flex: 1;
+}
+
+.socialLinksInner .iconBox i {
+  background-color: #e6ecf3;
+  font-size: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.socialLinksInner .fa-facebook-f {
+  color: #1877f2;
+}
+.socialLinksInner .fa-twitter {
+  color: #1da1f2;
+}
+.socialLinksInner .fa-youtube {
+  color: #cd201f;
+}
+
+.subscribe {
+  flex: 1;
+}
+
+.subscribe h5 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscribe input {
+  width: 60%;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.btnSubscribe {
+  font-size: 14px;
+  background-color: #00428b;
+  color: #e6ecf3;
+}
+
+.subscribe input:focus {
+  box-shadow: 0px 0px 5px 1px #668eb9;
+}
+
+/* ===============end============ */
